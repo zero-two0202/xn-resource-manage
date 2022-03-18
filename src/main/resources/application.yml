@@ -1,0 +1,24 @@
+
+server:
+  port: 80
+
+
+#druid?????
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/xnxy_spot_equipment_manage?serverTimeZone=UTC
+      username: root
+      password: zgy1839801730
+
+mybatis-plus:
+  global-config:
+    db-config:
+      #??????
+      table-prefix: xnxy_
+      #??ID???????
+      id-type: auto
+  #?mp????????????????mp????sql??
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
