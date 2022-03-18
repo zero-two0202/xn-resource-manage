@@ -31,7 +31,7 @@ public class ProductServiceTest {
     @Test
     public void save(){
         Product product = new Product();
-        product.setP_desc("台球");
+        product.setPDesc("台球");
 
         productService.save(product);
     }
@@ -40,7 +40,7 @@ public class ProductServiceTest {
     public void update(){
         Product product = new Product();
         product.setId(5);
-        product.setP_desc("网球");
+        product.setPDesc("网球");
         productService.update(product);
     }
 

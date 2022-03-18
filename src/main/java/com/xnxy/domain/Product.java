@@ -15,9 +15,9 @@ public class Product {
     @ApiModelProperty("商品id号")
     private Integer id;
     @ApiModelProperty("商品信息的描述")
-    private String p_desc;
+    private String pDesc;
     @ApiModelProperty("商品的图片信息")
-    private String p_picture;
+    private String pPicture;
     @ApiModelProperty("商品需求的数量，默认为0")
-    private Integer p_need;
+    private Integer pNeed;
 }

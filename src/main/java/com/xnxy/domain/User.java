@@ -17,11 +17,11 @@ public class User {
     @ApiModelProperty("用户的id")
     private Integer id;
     @ApiModelProperty("用户的用户名")
-    private String user_username;
+    private String userUsername;
     @ApiModelProperty("用户的密码")
-    private String user_password;
+    private String userPassword;
     @ApiModelProperty("用户的头像")
-    private String user_picture;
+    private String userPicture;
     @ApiModelProperty("用户的预约记录")
-    private Integer user_record_id;
+    private Integer userRecordId;
 }

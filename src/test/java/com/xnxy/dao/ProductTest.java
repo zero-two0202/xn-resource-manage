@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 /**
  * @author 钟国煜
  * @creat 2022-03-17-20:42
@@ -16,21 +18,22 @@ public class ProductTest {
 
     @Test
     public void getById(){
-        productDao.selectById(1);
+        List<Product> productList = productDao.selectList(null);
+        System.out.println("product = "+productList);
     }
     @Test
     public void save(){
-        Product product = new Product();
-        product.setP_desc("羽毛球");
-        productDao.insert(product);
+//        Product product = new Product();
+////        product.setP_desc("羽毛球");
+//        productDao.insert(product);
     }
 
     @Test
     public void update(){
-        Product product = new Product();
-        product.setId(3);
-        product.setP_desc("乒乓球");
-        productDao.updateById(product);
+//        Product product = new Product();
+//        product.setId(3);
+//        product.setP_desc("乒乓球");
+//        productDao.updateById(product);
     }
 
 }

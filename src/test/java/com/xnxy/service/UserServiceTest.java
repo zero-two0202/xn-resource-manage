@@ -17,9 +17,8 @@ public class UserServiceTest {
 
     @Test
     public void selectById(){
-        userService.getById(1);
-        userService.getById(2);
-        userService.getById(3);
+        System.out.println(userService.getById(1));
+
     }
 
     @Test
@@ -30,8 +29,8 @@ public class UserServiceTest {
     @Test
     public void save(){
         User user = new User();
-        user.setUser_username("xnxy");
-        user.setUser_password("xnxy");
+        user.setUserUsername("xnxy");
+        user.setUserPassword("xnxy");
         userService.save(user);
     }
 
@@ -39,12 +38,12 @@ public class UserServiceTest {
     public void update(){
         User user = new User();
         user.setId(1);
-        user.setUser_username("admin");
-        user.setUser_password("123456");
+        user.setUserUsername("admin");
+        user.setUserPassword("123456");
         userService.update(user);
         user.setId(2);
-        user.setUser_username("root");
-        user.setUser_password("root");
+        user.setUserUsername("root");
+        user.setUserPassword("root");
         userService.update(user);
     }
 
